@@ -5,6 +5,8 @@ This repo contains the simulation code for Nonlinear Motion Control of a Multiro
 
 The code runs real-world experiments with a multirotor UAV running the [PX4 autopilot firmware](https://px4.io/). The vehicle is available through [Holybro](https://holybro.com/). 
 
+Software in the Loop (SITL) simulation code used to validate the multirotor performance can be found in [ACC-Repository](https://github.com/ANCL/ACC-Repository).
+
 ## Important Folders and Files
 
 1. Folder containing the module which implements the quasi-static controller on ROS : [ROS src folder](./src)
@@ -15,12 +17,16 @@ The code runs real-world experiments with a multirotor UAV running the [PX4 auto
 
 1. Using QgroundControl to take off.
 
-2. Enagle quasi-static controller:
+2. Enable quasi-static controller:
 
 ```
 rosrun offb_control get_states_node
 rosrun offb_control offb_control_node 
 ```
+
+## Organized Lab Code
+
+The organized development code used by the multirotor UAV in the lab is available in [ACC-Experiment-Code](https://github.com/ANCL/ACC-Experiment-Code).
 
 ## Debug/Customize Controller
 
